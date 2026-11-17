@@ -1,0 +1,41 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Secret Reef - Proof of Concept</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1>Secret Reef</h1>
+  <p>Draw a sea creature and add it to the reef!</p>
+
+  <div class="tools">
+    <label>Color <input type="color" id="color" value="#397F91"></label>
+
+    <label>Brush size
+      <input type="range" id="size" min="2" max="25" value="6">
+    </label>
+
+    <button id="undo">Undo</button>
+    <button id="clear">Clear</button>
+    <button id="add">Add to Reef</button>
+  </div>
+
+  <div class="workspace">
+    <div class="drawing">
+      <h3>Draw your creature</h3>
+      <canvas id="drawingCanvas"></canvas>
+    </div>
+
+    <div class="reef">
+      <h3>Your Reef</h3>
+      <canvas id="reefCanvas"></canvas>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
